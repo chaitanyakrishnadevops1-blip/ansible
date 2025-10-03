@@ -20,7 +20,3 @@
     ansible.builtin.debug:
       msg: "Hello from PLAY-02 and TASK-02" 
     
-
-
-    
-          
