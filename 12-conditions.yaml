@@ -1,10 +1,8 @@
 - name: conditions
   hosts: local
   connection: local
-  gather_facts: false  # Optional, but good to skip if not needed
   vars:
-    number: 5
-
+    number: 5 
   tasks:
     - name: Check if number is less than 10
       ansible.builtin.debug:
