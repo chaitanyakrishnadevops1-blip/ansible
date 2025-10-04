@@ -3,7 +3,7 @@
   connection: local 
   tasks:
   - name: install nginx  if redhat
-    ansible.built.dnf:
+    ansible.builtin.dnf:
        name: nginx 
        state: latest 
     when: ansible_os_family == "Redhat" # ansible while refering facts
