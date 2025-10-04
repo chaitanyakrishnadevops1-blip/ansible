@@ -11,8 +11,8 @@
     - shell
     - ansible
     concepts: # dictionary or map
-    cloud: aws 
-    cm: ansible
+      cloud: aws 
+      cm: ansible
   tasks:
   - name: print course info
     ansible.builtin.debug:
