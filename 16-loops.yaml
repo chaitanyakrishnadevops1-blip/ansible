@@ -3,7 +3,7 @@
   connection: local
   bacome: yes
   tasks:
-    - name: Install required packages
+    - name: print names
       ansible.builtin.package:
         name: "{{ item }}"
         state: latest
