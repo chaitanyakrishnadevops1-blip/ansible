@@ -1,9 +1,12 @@
+# 06-vars-files.yaml
 - name: variables from files
-  hosts: local 
+  hosts: localhost
   connection: local
+
   vars_files:
-  - course.yaml
+    - course.yaml
+
   tasks:
-  - name: print course info
-    ansible.builtin.debug:
-      msg: "Course Name is: {{ COURSE }}, Duration: {{ DURATION }}, Trainer: {{ Trainer }}"
+    - name: print course info
+      ansible.builtin.debug:
+        msg: "Course Name is: {{ COURSE }}, Duration: {{ DURATION }}, Trainer: {{ Trainer }}"
