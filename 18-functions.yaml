@@ -30,9 +30,10 @@
   - name: convert list to map 
     ansible.builtin.debug:
         msg: "tag map: {{ listTags | items2dict }}"
-  - name:  convert uppercase 
-    ansible.buitin.debug: 
-           msg: "{{ name | upper }}"
+
+  - name: convert uppercase 
+    ansible.builtin.debug: 
+      msg: "{{ name | upper }}"
 
 
       
